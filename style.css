@@ -1,0 +1,195 @@
+body {
+    background-color: #2b4162;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100vw;
+  /*   height: 20vh; */
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1.5vh 0 0 0;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://miro.medium.com/max/1400/0*mcuY8eyGd7jWQRcf);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(20%);
+  
+    /* Set a specific height */
+  /*   min-height: 300px; */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+  }
+  
+  .hero-content {
+    position: relative;
+    margin: 7vh 0px 0px 0px;
+  }
+  
+  .hero-content img {
+    border-radius: 50%;
+    border: .7vw dashed #2b4162;
+    width: 20vw;
+  }
+  
+  .hero-content h1 {
+    color: #fa9f42;
+    text-shadow: 2.3px 2.3px #721817;
+    font-size: 9vw;
+    -webkit-text-stroke-width: .1vh;
+    -webkit-text-stroke-color: #2b4162;
+  }
+  
+  .hero-content h3 {
+    margin-top: 20px;
+    padding: 0px 0px 5px 0px;
+    color: white;
+    border: 2.5px solid #721817;
+    -webkit-text-stroke-width: .05vh;
+    -webkit-text-stroke-color: black;
+    font-size: 3vw;
+  }
+  
+  .carousel-item {
+      border: 5px solid #fa9f42;
+      overflow: hidden;
+      height: 50vh;
+  }
+  
+  .carousel-item img {
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+  }
+  
+  .carousel-item .overlay {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.6);
+      z-index: 1;
+  }
+  
+  .carousel-caption {
+      z-index: 2;
+  }
+  
+  .carousel-caption h5, .carousel-caption p {
+       font-family: 'Roboto Slab', serif;   
+       color: #fa9f42;
+       -webkit-text-stroke-width: .1vh;
+       -webkit-text-stroke-color: #2b4162;
+       
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2.8vh;
+  }
+  
+  .carousel-caption p {
+    font-size: 2vh;
+  }
+  
+  .carousel .carousel-indicators .active {
+    background-color: #fa9f42;
+  }
+  
+  .carousel-control-prev-icon { 
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
+  
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  
+    }
+  
+  #mission-section p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  #mission-section img {
+    width: 40vw;
+  }
+  
+  #mission-section h2, #skills-section h2, #contact-section h2, #inspiration-section h2{
+    font-weight: bolder;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    
+  }
+  
+  .module-border-wrap {
+    max-width: 250px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #721817, #fa9f42);
+    padding: 3px;
+  }
+  
+  #skills-section {
+    background-color: #721817;
+  }
+  
+  #skills-section p {
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  #skills-section img {
+    width: 20%;
+  }
+  
+  #contact-section {
+    background-color: #721817;
+    margin-top: 3%;
+  }
+  
+  #contact-section i {
+    color: white;
+    font-size: 8vw;
+  }
+  
+  #contact-section i:hover {
+    color: #fa9f42;
+    font-size: 8vw;
+  }
+  
+  #footer-section p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin: auto;
+    padding: 10px;
+    background-color: #28242c;
+  }
+  
+  #mission-section, #skills-section, #inspiration-seciton, #contact-section {
+    scroll-margin-top: 53px;
+  }
